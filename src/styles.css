@@ -1,1 +1,62 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  --h1-scale: 3rem;
+  --p-scale: 1.25rem;
+}
+
+@media (max-width: 1200px) {
+  :root {
+    --h1-scale: 2.5rem;
+    --p-scale: 1.2rem;
+  }
+}
+
+@media (max-width: 992px) {
+  :root {
+    --h1-scale: 2rem;
+    --p-scale: 1.1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --h1-scale: 1.75rem;
+    --p-scale: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  :root {
+    --h1-scale: 1.5rem;
+    --p-scale: 0.95rem;
+  }
+}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-image: url('assets/bg1.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background-position: center; */
+  min-height: 100vh;
+}
+
+
+.navbar-nav .nav-link {
+  font-size: 1.1rem;
+  color: white;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ffc107 !important;
+}
+
+.content-overlay {
+  padding-top: 70px; /* To push content below navbar */
+  color: white;
+  min-height: 100vh;
+}
+
+
+/*
+
+https://ridocare.com/ */
