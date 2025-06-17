@@ -1,23 +1,35 @@
- <nav class="navbar navbar-expand bg-dark navbar-dark fixed-top px-4">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4">
   <a class="navbar-brand fs-3 text-warning fw-bold" href="#">Gear Shifter</a>
-  <ul class="navbar-nav ms-auto d-flex flex-row">
-    <li class="nav-item mx-2">
-      <a class="nav-link text-white" routerLink="/">Home</a>
-    </li>
-    <li class="nav-item mx-2">
-      <a class="nav-link text-white" routerLink="/about">About</a>
-    </li>
-    <li class="nav-item mx-2">
-      <a class="nav-link text-white" routerLink="/services">Services</a>
-    </li>
-    <li class="nav-item mx-2">
-      <a class="nav-link text-white" routerLink="/contact">Contact</a>
-    </li>
-  </ul>
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ms-auto text-center">
+      <li class="nav-item">
+        <a class="nav-link text-white" routerLink="/">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white" routerLink="/about">About Us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white" routerLink="/services">Services</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white" routerLink="/contact">Contact</a>
+      </li>
+    </ul>
+  </div>
 </nav>
+
 
 <div class="content-overlay">
   <router-outlet></router-outlet>
 </div> 
-
+<footer style="color: #ffc107;font-weight: bold;">
+    <div class="text-center">
+      <small>© 2025 Gear Shifter Automotive. All rights reserved.</small>
+    </div>
+</footer>
 

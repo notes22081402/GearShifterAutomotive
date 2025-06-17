@@ -1,0 +1,10 @@
+h5 {
+  font-weight: 600;
+}
+
+i {
+  transition: transform 0.2s ease;
+}
+i:hover {
+  transform: scale(1.2);
+}
