@@ -4,22 +4,21 @@
   <div class="row">
     <!-- Contact Form -->
     <div class="col-md-6">
-      <form>
+      <form (ngSubmit)="onSubmit()" #form="ngForm">
         <div class="mb-3">
           <label class="form-label">Name</label>
-          <input type="text" class="form-control" placeholder="Your Name" required>
+          <input type="text" name="name" [(ngModel)]="formData.name" class="form-control" placeholder="Your Name" required>
         </div>
 
         <div class="mb-3">
           <label class="form-label">Email</label>
-          <input type="email" class="form-control" placeholder="Your Email" required>
+          <input type="email" name="email" [(ngModel)]="formData.email" class="form-control" placeholder="Your Email" required>
         </div>
 
         <div class="mb-3">
           <label class="form-label">Message</label>
-          <textarea class="form-control" rows="4" placeholder="Your Message" required></textarea>
+          <textarea class="form-control" name="message" [(ngModel)]="formData.message"  rows="4" placeholder="Your Message" required></textarea>
         </div>
-
         <button type="submit" class="btn btn-warning w-100">Send Message</button>
       </form>
     </div>
@@ -48,7 +47,7 @@
 
       <div class="mb-3">
         <h5>Call / WhatsApp</h5>
-        <p>📞 +91 98765 43210</p>
+        <p>📞 +91 9152628215</p>
       </div>
 
       <!-- <div class="mb-3">
